@@ -1,6 +1,6 @@
 CREATE DATABASE fsd;
 USE fsd;
---CONSTRAINTS---- 
+-- LEARNT CONSTRAINTS---- 
 
 CREATE TABLE students(
 	s_id INT UNIQUE,
