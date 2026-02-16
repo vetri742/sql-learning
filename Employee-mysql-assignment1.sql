@@ -95,7 +95,7 @@ values
 --10. Write a query to find employee with highest salary in 'Bangalore'.
 
 	SELECT*FROM employee
-		WHERE city='Bangalore' AND esal=(SELECT MAX(esal)FROM employee WHERE city='Mumbai');
+		WHERE city='Mumbai' AND esal=(SELECT MAX(esal)FROM employee WHERE city='Mumbai');
 ;
 
 --11. Write a query to find employee who live in 'Hyderabad' with age above 70.
@@ -136,6 +136,7 @@ values
 		esal+10000 AS updated_salary
 		FROM employee
 		WHERE esal=(SELECT MIN(esal)FROM employee); 
+
 	
 	
 --19. Write a query to Sort the table by ascending.
